@@ -1,10 +1,11 @@
 import smtplib 
 from email.message import EmailMessage 
 import ssl
+import os
 
-email_sender = ''
-email_password = ''
-email_receiver = 'kansapat4921@gmail.com'
+email_sender = os.getenv("EMAIL_SENDER")
+email_password = os.getenv("EMAIL_PASSWORD")
+email_receiver = os.getenv("EMAIL_RECEIVER")
 
 subject = 'PC is closed!'
 body = 'Pinging the PC doesn\'t return a response!'
