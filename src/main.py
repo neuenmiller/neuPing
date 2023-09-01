@@ -10,7 +10,7 @@ email_sender = os.getenv("EMAIL_SENDER")
 email_password = os.getenv("EMAIL_PASSWORD")
 email_receiver = os.getenv("EMAIL_RECEIVER")
 
-subject = 'PC is closed!'
+subject = 'PC is not responsive!'
 body = 'Pinging the PC doesn\'t return a response!'
 
 while True:
