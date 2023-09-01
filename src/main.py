@@ -2,9 +2,10 @@ import time
 from email_module import sendEmail
 from ping_module import pingPC
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 hostIP = os.getenv("HOST_IP")
-
 email_sender = os.getenv("EMAIL_SENDER")
 email_password = os.getenv("EMAIL_PASSWORD")
 email_receiver = os.getenv("EMAIL_RECEIVER")
